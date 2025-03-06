@@ -20,28 +20,30 @@
 
   <div class="bg-container">
   <h2>Bill</h2> 
-  <div class="bill"> <img src="images/icon-dollar.svg" alt="icon-dollar" name="icon-dollar"><input type="text" placeholder="0"> </div>
+  <div class="bill"> <img src="images/icon-dollar.svg" alt="icon-dollar" name="icon-dollar"><input type="number" id="bill" placeholder="0"> </div>
 
   <h2>Select Tip %</h2>
   <div class="tip-blocks">
-    <div class="item">5%</div>
-    <div class="item">10%</div>
-    <div class="item">15%</div>
-    <div class="item">25%</div>
-    <div class="item">50%</div>
-    <div class="custom"> <input type="text" placeholder="Custom"></div>
+    <button class="item" data-value="5">5%</button>
+    <button class="item" data-value="10">10%</button>
+    <button class="item" data-value="15">15%</button>
+    <button class="item" data-value="25">25%</button>
+    <button class="item" data-value="50">50%</button>
+    <div class="custom"> <input type="number" id="custom" placeholder="Custom"></div>
   </div>
   <h2>Number of People</h2>   
-  <div class="people"> <img src="images/icon-person.svg" alt="icon-person" name="icon-person"><input type="text" placeholder="0"> </div>
+  <div class="people"> <img src="images/icon-person.svg" alt="icon-person" name="icon-person"><input type="number" id="people" placeholder="0"> </div>
   
   <div class="green-container">
   <div class="tip-amount">
-    <h2 class="tip">Tip Amount</h2>
+    <h2 class="amount">Tip Amount</h2>
   <h3 class="person">/ person</h3>
+  <div id="tip-result"></div>
 </div>
 <div class="total-person">
-  <h2 class="total">Total</h2>
+  <h2 class="amount">Total</h2>
   <h3 class="person">/ person</h3>
+  <div id="total"></div>
 </div>
   <button class="reset">Reset</button>
   </div>
@@ -52,5 +54,6 @@
     Coded by <a href="#">Katia Aragon</a>.
   </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
