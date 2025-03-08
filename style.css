@@ -48,7 +48,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2.1rem 1.5rem 1.5rem 1rem;
+  padding: 2.1rem 1.3rem 0 1.3rem;
 }
 
 .input-containers {
@@ -132,8 +132,41 @@ h2 {
 }
 
 .person {
-  color: var(--Very-light);
+  color: var(--grayish-cyan);
   font-size: 0.8rem;
+}
+
+.total-person{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#tip-result, #total {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: var(--Strong-cyan);
+    font-size: 2rem;
+    font-weight: var(--weight);
+}
+
+#reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Strong-cyan);
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem;
+    color: var(--Very-dark-cyan);
+    font-size: 1.4rem;
+    font-weight: var(--weight);
+    font-family: var(--font);
+    text-transform: uppercase;
+    cursor: pointer;
+    max-width: 100%;
 }
 
 .bill, .people {
@@ -171,4 +204,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 input[type=number] {
     -moz-appearance: textfield;
+}
+
+footer {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 11px;
+    text-align: center;
+    color: var(--grayish-cyan);
 }

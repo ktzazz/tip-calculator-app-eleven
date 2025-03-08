@@ -43,13 +43,13 @@ function updateResult() {
     const tipPerPerson = tipAmount / numPeople; // Tip per person
     const totalPerPerson = numBill / numPeople + tipPerPerson; // Total per person
 
-    result.textContent = tipPerPerson.toFixed(2); // .toFixed(2) for two decimal places
-    total.textContent = totalPerPerson.toFixed(2);
+    result.textContent = '$' + tipPerPerson.toFixed(2); // .toFixed(2) for two decimal places
+    total.textContent = '$' + totalPerPerson.toFixed(2);
 
     //we don't use result to calculate the total because that's from html, it's like trying to do an addition of a string and a numeric value.
   } else {
     result.textContent = "Enter a valid number of people, please.";
-    total.textContent = "0.00"; // reset the total if numPeople is 0
+    total.textContent = "$0.00"; // reset the total if numPeople is 0
   }
 }
 
@@ -60,8 +60,11 @@ people.addEventListener("input", updateResult);
 resetButton.addEventListener("click", function () {
   bill.value = "";
   people.value = "";
-  result.textContent = "0.00";
-  total.textContent = "0.00";
+  result.textContent = "$0.00";
+  total.textContent = "$0.00";
+  custom.value = ""; //because tipValue and custom.value are independent
 
   tipValue = 0;
 });
+
+updateResult(); //when the page loads the result is updated
