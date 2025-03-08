@@ -15,6 +15,21 @@ tip.forEach((button) => {
   }); // the result is updated every time a button is clicked
 });
 
+
+//this part is for the button when active 
+const activeButton = document.querySelectorAll(".item");
+
+activeButton.forEach((button) => {
+  button.addEventListener('click', function() { 
+    if (this.classList.contains('selected')) { //if the button is already selected a second click will remove the "selected" class 
+      this.classList.remove('selected'); 
+    } else {
+      activeButton.forEach(btn => btn.classList.remove('selected')); 
+      this.classList.add('selected'); //if the button is not selected, add the "selected" class
+    }
+  });
+});
+
 custom.addEventListener("input", function () {
   tipValue = parseInt(custom.value);
   updateResult();

@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -18,11 +21,11 @@
 </head>
 <body>
 
-  <img src="images/logo.svg" alt="logo" name="logo">
+  <img src="images/logo.svg" alt="logo" id="logo">
 
   <div class="bg-container">
   <h2>Bill</h2> 
-  <div class="bill"> <img src="images/icon-dollar.svg" alt="icon-dollar" name="icon-dollar"><input type="number" id="bill" placeholder="0"> </div>
+  <div class="bill"> <img src="images/icon-dollar.svg" alt="icon-dollar" id="icon-dollar"><input type="number" id="bill" placeholder="0"> </div>
 
   <h2>Select Tip %</h2>
   <div class="tip-blocks">
@@ -34,7 +37,7 @@
     <div class="custom"> <input type="number" id="custom" placeholder="Custom"></div>
   </div>
   <h2>Number of People</h2>   
-  <div class="people"> <img src="images/icon-person.svg" alt="icon-person" name="icon-person"><input type="number" id="people" placeholder="0"> </div>
+  <div class="people"> <img src="images/icon-person.svg" alt="icon-person" id="icon-person"><input type="number" id="people" placeholder="0"> </div>
   
   <div class="green-container">
   <div class="tip-amount">
@@ -50,7 +53,7 @@
   <button id="reset">Reset</button>
   </div>
 </div>
-<footer
+<footer>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Katia Aragon</a>.
