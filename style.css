@@ -41,7 +41,7 @@ body {
 }
 
 .bg-container {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   background-color: var(--white);
   border-radius: 20px 20px 0 0;
@@ -210,6 +210,80 @@ footer {
     margin: 1rem 0;
     text-align: center;
     font-size: 11px;
-    text-align: center;
     color: var(--grayish-cyan);
+}
+
+@media (min-width: 1200px) {
+    
+#logo {
+    max-width: 7%;
+    margin: 7rem 0 4.5rem 0;
+  }
+  
+  .bg-container {
+    width: 67vw;
+    height: 57vh;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    padding: 2rem 1.3rem 2rem 1.3rem;
+    margin: 0 0 2em 0rem;
+  }
+
+  #grid-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.2rem 1.8rem 1.2rem 0.8rem;
+  }
+  
+  .tip-container {
+    display: flex;
+    flex-direction: column;
+    width: 28vw;
+    align-items: stretch;
+    padding: 0 0.7rem;
+    margin: 0;
+  }
+  
+  .tip-blocks {
+    margin-block-start: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+  
+  #custom {
+    width: 100%;
+  }
+  
+  .item {
+    width: 100%;
+  }
+  
+  .green-container {
+    grid-area: 1 / 2 / 1 / 2;
+    justify-content: space-between;
+    padding: 3rem 2.5rem 2.7rem 2.5rem;
+    width: 31vw;
+    height: 50vh;
+    margin: 0 0.7rem;
+  }
+
+  #tip-am{
+    margin-block-start: -6rem;
+  }
+ 
+  #tip-result, #total {
+      font-size: 2.7rem;
+  }
+
+  footer {
+    margin: 0 0 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 }

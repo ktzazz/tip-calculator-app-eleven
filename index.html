@@ -24,9 +24,13 @@
   <img src="images/logo.svg" alt="logo" id="logo">
 
   <div class="bg-container">
-  <h2>Bill</h2> 
+    <div id="grid-1">
+  <div class="input-containers">
+    <h2>Bill</h2> 
   <div class="bill"> <img src="images/icon-dollar.svg" alt="icon-dollar" id="icon-dollar"><input type="number" id="bill" placeholder="0"> </div>
+  </div>
 
+  <div class="tip-container">
   <h2>Select Tip %</h2>
   <div class="tip-blocks">
     <button class="item" data-value="5">5%</button>
@@ -34,22 +38,32 @@
     <button class="item" data-value="15">15%</button>
     <button class="item" data-value="25">25%</button>
     <button class="item" data-value="50">50%</button>
-    <div class="custom"> <input type="number" id="custom" placeholder="Custom"></div>
+    <input type="number" id="custom" placeholder="Custom">
   </div>
+  </div>
+
+  <div class="input-containers">
   <h2>Number of People</h2>   
   <div class="people"> <img src="images/icon-person.svg" alt="icon-person" id="icon-person"><input type="number" id="people" placeholder="0"> </div>
-  
+  </div>
+    </div>
+
   <div class="green-container">
-  <div class="tip-amount">
+   
+  <div class="total-person">
+    <div class="tip-amount">
     <h2 class="amount">Tip Amount</h2>
-  <h3 class="person">/ person</h3>
+  <h3 class="person">/ person</h3></div>
   <div id="tip-result"></div>
 </div>
-<div class="total-person">
+
+<div class="total-person" id="tip-am">
+  <div class="tip-amount">
   <h2 class="amount">Total</h2>
-  <h3 class="person">/ person</h3>
+  <h3 class="person">/ person</h3></div>
   <div id="total"></div>
 </div>
+
   <button id="reset">Reset</button>
   </div>
 </div>
