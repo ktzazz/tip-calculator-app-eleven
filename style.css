@@ -213,6 +213,76 @@ footer {
     color: var(--grayish-cyan);
 }
 
+@media (min-width: 768px) {
+    #logo {
+        max-width: 13%;
+        margin: 2.1rem 0 1.7rem 0;
+      }
+      
+      .bg-container {
+        width: 67vw;
+        height: 80vh;
+        border-radius: 20px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.3rem 2rem 1.3rem;
+        margin: 0;
+      }
+
+      #grid-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1.2rem 0.8rem;
+      }
+      
+      .tip-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0.7rem;
+        margin: 1.5rem 0 1.5rem 0;
+      }
+      
+      .tip-blocks {
+        margin-block-start: 1.2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+      }
+      
+      #custom {
+        min-width: 100%;
+      }
+      
+      .item {
+        min-width: 100%;
+      }
+      
+      .green-container {
+        justify-content: space-between;
+        padding: 3rem 2.5rem 2.7rem 2.5rem;
+        width: 58vw;
+        height: 50vh;
+        margin: 1rem 0 0 0;
+      }
+    
+      #tip-am{
+        margin-block-start: -3rem;
+      }
+     
+      #tip-result, #total {
+          font-size: 2.4rem;
+      }
+    
+      footer {
+        margin: 0.8rem 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    }
+
 @media (min-width: 1200px) {
     
 #logo {
@@ -241,10 +311,8 @@ footer {
   .tip-container {
     display: flex;
     flex-direction: column;
-    width: 28vw;
-    align-items: stretch;
     padding: 0 0.7rem;
-    margin: 0;
+    margin: 2.5rem 0;
   }
   
   .tip-blocks {
@@ -255,11 +323,11 @@ footer {
   }
   
   #custom {
-    width: 100%;
+    min-width: 100%;
   }
   
   .item {
-    width: 100%;
+    min-width: 100%;
   }
   
   .green-container {

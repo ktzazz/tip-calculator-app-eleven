@@ -63,6 +63,7 @@ resetButton.addEventListener("click", function () {
   result.textContent = "$0.00";
   total.textContent = "$0.00";
   custom.value = ""; //because tipValue and custom.value are independent
+  activeButton.forEach(button => button.classList.remove('selected')); //remove the "selected" class
 
   tipValue = 0;
 });
